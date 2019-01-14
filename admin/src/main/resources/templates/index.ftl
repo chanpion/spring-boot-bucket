@@ -2,7 +2,7 @@
 <html>
 <head>
   <#include "common/layout.ftl" />
-  <#include "macro/base.ftl" />
+  <#--<#include "macro/base.ftl" />-->
   <base href="/adminlte/">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">

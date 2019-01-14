@@ -1,3 +1,4 @@
+<#--<aside class="left-side sidebar-offcanvas">-->
 <aside class="main-sidebar">
     <section class="sidebar">
         <div class="user-panel">
@@ -30,6 +31,19 @@
                 <a target="navTab" href="/admin/dataDictionary/list">
                     <i class="fa fa-cog fa-fw"></i> <span>配置管理</span> </i>
                 </a>
+            </li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span>Charts</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="../pages/charts/morris.ftl"><i class="fa fa-angle-double-right"></i> Morris</a></li>
+                    <li><a href="../pages/charts/flot.ftl"><i class="fa fa-angle-double-right"></i> Flot</a></li>
+                    <li><a href="../pages/charts/inline.ftl"><i class="fa fa-angle-double-right"></i> Inline charts</a></li>
+                </ul>
             </li>
 
             <li class="treeview">
