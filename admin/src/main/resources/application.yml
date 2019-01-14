@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cloud-admin
+  freemarker:
+    enabled: true
+    charset: UTF-8
+    suffix: .ftl
+    check-template-location: true
+    template-loader-path: ["classpath:/templates/"]
+    request-context-attribute: ctx
+    content-type: text/html;charset=UTF-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: true
+    settings:
+      locale: zh_CN
+      datetime_format: yyyy-MM-dd HH:mm:ss
+      date_format: yyyy-MM-dd
+      template_update_delay: 10
+      number_format: #.##
