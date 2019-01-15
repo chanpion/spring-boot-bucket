@@ -40,9 +40,9 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="../pages/charts/morris.ftl"><i class="fa fa-angle-double-right"></i> Morris</a></li>
-                    <li><a href="../pages/charts/flot.ftl"><i class="fa fa-angle-double-right"></i> Flot</a></li>
-                    <li><a href="../pages/charts/inline.ftl"><i class="fa fa-angle-double-right"></i> Inline charts</a></li>
+                    <li><a href="/chart/morris"><i class="fa fa-angle-double-right"></i> Morris</a></li>
+                    <li><a href="/chart/flot"><i class="fa fa-angle-double-right"></i> Flot</a></li>
+                    <li><a href="/chart/inline"><i class="fa fa-angle-double-right"></i> Inline charts</a></li>
                 </ul>
             </li>
 

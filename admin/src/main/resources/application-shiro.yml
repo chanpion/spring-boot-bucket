@@ -1,0 +1,4 @@
+shiro:
+  enabled: true
+  annotations:
+    enabled: true
