@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+      name: serverbase
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://172.19.80.206:3305/dialog_arch?useUnicode=true&characterEncoding=utf-8
+      username: dialog
+      password: dialog
+
+#mybatis:
+#  mapper-locations: classpath:mybatis/mappers/*.xml
+#  config-location: classpath:mybatis/mybatis-config.xml
+mybatis:
+  type-aliases-package: com.chanpion.boot.entity
+  mapper-locations: classpath:mybatis/mappers/*.xml

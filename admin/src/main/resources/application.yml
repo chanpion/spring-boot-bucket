@@ -26,5 +26,15 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/cloud-admin
+logging:
+  level:
+    root: info
 
-
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'

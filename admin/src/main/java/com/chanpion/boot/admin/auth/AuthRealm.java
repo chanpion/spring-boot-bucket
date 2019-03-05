@@ -24,7 +24,7 @@ import javax.annotation.Resource;
  * @author April Chen
  * @date 2019/1/15 11:17
  */
-@Component
+@Component("authorizer")
 public class AuthRealm extends AuthorizingRealm {
     private static final Logger LOGGER = LoggerFactory.getLogger(AuthRealm.class);
 
