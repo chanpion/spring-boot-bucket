@@ -15,8 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 public class SecurityUtil {
     public static Session getSession() {
         Subject currentUser = SecurityUtils.getSubject();
-        Session session = currentUser.getSession();
-        return session;
+        return currentUser.getSession();
     }
 
     public static User getCurrentUser() {

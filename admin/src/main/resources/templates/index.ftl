@@ -6,7 +6,7 @@
   <base href="/adminlte/">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Cloud管理后台</title>
+  <title>管理平台</title>
   <@style/>
 </head>
 <body class="sidebar-mini skin-blue-light wysihtml5-supported">
