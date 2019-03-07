@@ -30,7 +30,7 @@
                         <div class="box-header">
                             <h3 class="box-title">用户管理</h3>
                             <div class="box-tools pull-right">
-                                <a onclick="securityToListAjax();" class="btn btn-sm btn-primary" target="modal" modal="lg" href="${ctx}/admin/security/add">添加</a>
+                                <a onclick="securityToListAjax();" class="btn btn-sm btn-primary" target="modal" modal="lg" href="/user/add">添加</a>
                             </div>
                         </div>
                         <div class="box-body">

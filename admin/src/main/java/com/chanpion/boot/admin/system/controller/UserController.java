@@ -21,11 +21,16 @@ import java.util.List;
 public class UserController {
 
 
-
     @ApiOperation(value = "获取用户列表", notes = "")
     @RequestMapping("/list")
     public String list() {
         return "/admin/user/list";
+    }
+
+    @ApiOperation(value = "获取用户列表", notes = "")
+    @RequestMapping("/add")
+    public String add() {
+        return "/admin/user/add";
     }
 
     @ApiOperation(value = "获取用户详细信息", notes = "根据url的id来获取用户详细信息")
@@ -34,4 +39,6 @@ public class UserController {
     public User getUser(@PathVariable Long id) {
         return new User();
     }
+
+
 }
