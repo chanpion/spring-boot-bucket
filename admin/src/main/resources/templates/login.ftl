@@ -4,11 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-	<title>龙果开源-后台管理系统</title>
+	<title>后台管理系统</title>
 	
-	<base href="${ctx}/static/roncoo-adminlte/">
-  	<link rel="stylesheet" href="dist/css/login2.css">
-  	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="/adminlte/dist/css/login2.css">
+  	<link rel="stylesheet" href="/adminlte/plugins/bootstrap/css/bootstrap.min.css">
 	<!--[if IE]>
 		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
 	<![endif]-->
@@ -18,7 +17,7 @@
 	  <div class="demo">
 	    <div class="login">
 	      <div class="login__check">
-	      	<img src="dist/img/logo.png" alt="">
+	      	<img src="/adminlte/dist/img/logo.png" alt="">
 	      </div>
 	      <form action="${ctx}/login" class="login__form" method="post">
 	      	<!--默认账号密码user、admin、super-->
@@ -45,7 +44,7 @@
 	    <div class="app">
 	      <div class="app__bot">
 	        <div class="app__title">
-	    	    欢迎注册龙果管理系统
+	    	    欢迎注册管理系统
 	        </div>
 	        <form class="app__meetings reg__form">
 	          <div class="app__meeting">
@@ -86,9 +85,9 @@
 	  </div>
 	</div>
 	
-	<script src="dist/js/pages/login2.js"></script>
+	<script src="/adminlte/dist/js/pages/login2.js"></script>
 	<!-- jQuery 2.2.3 -->
-	<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+	<script src="/adminlte/plugins/jQuery/jquery-2.2.3.min.js"></script>
 	
 	<script>
 	$(document).ready(function () {
