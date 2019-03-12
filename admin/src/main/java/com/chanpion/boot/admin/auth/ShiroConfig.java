@@ -18,4 +18,5 @@ public class ShiroConfig {
         chainDefinition.addPathDefinition("/**", "anon");
         return chainDefinition;
     }
+
 }

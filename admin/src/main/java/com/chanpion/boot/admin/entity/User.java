@@ -1,5 +1,7 @@
 package com.chanpion.boot.admin.entity;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
@@ -11,6 +13,7 @@ import java.util.Set;
  * @author April Chen
  * @date 2019/1/15 11:08
  */
+@Document
 public class User extends BaseEntity implements Serializable {
     private static final long serialVersionUID = 9175311019615554374L;
 

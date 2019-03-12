@@ -1,6 +1,7 @@
 package com.chanpion.boot.admin.auth;
 
 import com.chanpion.boot.admin.constant.Consts;
+import com.chanpion.boot.admin.dao.UserDao;
 import com.chanpion.boot.admin.entity.User;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
