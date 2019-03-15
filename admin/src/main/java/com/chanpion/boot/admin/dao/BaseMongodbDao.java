@@ -2,8 +2,6 @@ package com.chanpion.boot.admin.dao;
 
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
 import java.lang.reflect.ParameterizedType;
@@ -15,15 +13,36 @@ import java.util.List;
  */
 public class BaseMongodbDao<T> {
 
+    @Resource
     private MongoTemplate mongoTemplate;
 
-    public BaseMongodbDao(MongoTemplate mongoTemplate) {
+    private String collectionName;
+
+
+    public BaseMongodbDao(MongoTemplate mongoTemplate, String collectionName) {
         this.mongoTemplate = mongoTemplate;
+        this.collectionName = collectionName;
     }
 
     public List<T> findAll() {
+        return mongoTemplate.findAll(getEntityClass(), collectionName);
+    }
+
+    public T findById(Object id) {
+        return mongoTemplate.findById(id, getEntityClass(), collectionName);
+    }
+
+    public T findOne() {
         Query query = new Query();
-        return mongoTemplate.findAll(getEntityClass(), "");
+        return mongoTemplate.findOne(query, getEntityClass(), collectionName);
+    }
+
+    public void save(T entity) {
+        mongoTemplate.save(entity, collectionName);
+    }
+
+    public void remove(T entity){
+        mongoTemplate.remove(entity,collectionName);
     }
 
     private Class<T> getEntityClass() {

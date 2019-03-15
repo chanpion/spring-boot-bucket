@@ -29,12 +29,24 @@ spring:
 logging:
   level:
     root: info
+    io.micrometer: warn
 
 management:
-  endpoint:
-    health:
-      show-details: always
   endpoints:
+    enabled-by-default: true
     web:
       exposure:
         include: '*'
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    export:
+      influx:
+        enabled: true
+        db: spring
+        uri: http://localhost:8086
+        step: 10s
+        user-name: admin
+        password: admin
+
