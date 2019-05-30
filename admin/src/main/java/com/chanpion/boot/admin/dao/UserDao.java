@@ -8,5 +8,12 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  * @date 2019/3/12 19:15
  */
 public interface UserDao extends MongoRepository<User, String> {
+
+    /**
+     * findByName
+     *
+     * @param username
+     * @return User
+     */
     User findByName(String username);
 }

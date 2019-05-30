@@ -32,7 +32,13 @@ public class AuthRealm extends AuthorizingRealm {
     @Resource
     private UserDao userDao;
 
-    //定义如何获取用户的角色和权限的逻辑，给shiro做权限判断
+
+    /**
+     * 定义如何获取用户的角色和权限的逻辑，给shiro做权限判断
+     *
+     * @param principalCollection
+     * @return
+     */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
@@ -41,7 +47,14 @@ public class AuthRealm extends AuthorizingRealm {
         return info;
     }
 
-    //定义如何获取用户信息的业务逻辑，给shiro做登录
+
+    /**
+     * 定义如何获取用户信息的业务逻辑，给shiro做登录
+     *
+     * @param authenticationToken
+     * @return
+     * @throws AuthenticationException
+     */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         String username = (String) authenticationToken.getPrincipal();

@@ -42,19 +42,35 @@ public class LogAspect {
         System.out.println("方法的返回值 : " + ret);
     }
 
-    //后置异常通知
+
+    /**
+     * 后置异常通知
+     *
+     * @param jp
+     */
     @AfterThrowing("log()")
     public void throwss(JoinPoint jp) {
         System.out.println("方法异常时执行.....");
     }
 
-    //后置最终通知,final增强，不管是抛出异常或者正常退出都会执行
+
+    /**
+     * 后置最终通知,final增强，不管是抛出异常或者正常退出都会执行
+     *
+     * @param jp
+     */
     @After("log()")
     public void after(JoinPoint jp) {
         System.out.println("方法最后执行.....");
     }
 
-    //环绕通知,环绕增强，相当于MethodInterceptor
+
+    /**
+     * 环绕通知,环绕增强，相当于MethodInterceptor
+     *
+     * @param pjp
+     * @return
+     */
     @Around("log()")
     public Object arround(ProceedingJoinPoint pjp) {
         System.out.println("方法环绕start.....");

@@ -31,7 +31,6 @@ public class AdminApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        List<User> users = userDao.findAll();
 
         List<User> users = mongoTemplate.findAll(User.class);
         System.out.println(users);

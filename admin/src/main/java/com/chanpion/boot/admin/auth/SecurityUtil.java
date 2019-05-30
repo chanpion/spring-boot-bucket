@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletRequest;
  * @author April Chen
  * @date 2019/1/15 11:19
  */
+@SuppressWarnings("AlibabaUndefineMagicConstant")
 public class SecurityUtil {
+    private static final  String unknown ="";
     public static Session getSession() {
         Subject currentUser = SecurityUtils.getSubject();
         return currentUser.getSession();

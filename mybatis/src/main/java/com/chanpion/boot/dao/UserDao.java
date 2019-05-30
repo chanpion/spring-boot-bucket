@@ -12,6 +12,12 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface UserDao {
 
+    /**
+     * find user
+     *
+     * @param username
+     * @return
+     */
     @Select("SELECT * FROM user WHERE username = #{username}")
     User findByName(@Param("username") String username);
 }

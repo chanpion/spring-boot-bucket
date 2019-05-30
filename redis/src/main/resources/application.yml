@@ -1,0 +1,23 @@
+server:
+  port: 16370
+
+spring:
+  application:
+    name: boot-redis
+#  redis:
+#    host: 172.19.80.186
+#    port: 9216
+#    database: 0
+#    password: RDC:iwencai#solr
+#    timeout: 200ms
+  redis:
+    host: 172.19.80.206
+    port: 19000
+    database: 0
+    password: iwencai@2016
+    timeout: 200ms
+
+logging:
+  level:
+    root: info
+

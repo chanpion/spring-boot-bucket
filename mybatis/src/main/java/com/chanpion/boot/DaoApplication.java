@@ -13,12 +13,12 @@ import javax.annotation.Resource;
  * @date 2019/2/27 17:29
  */
 @SpringBootApplication
-public class DAOApplication implements CommandLineRunner {
+public class DaoApplication implements CommandLineRunner {
     @Resource
     private UserDao userDao;
 
     public static void main(String[] args) {
-        SpringApplication.run(DAOApplication.class, args);
+        SpringApplication.run(DaoApplication.class, args);
     }
 
     @Override
