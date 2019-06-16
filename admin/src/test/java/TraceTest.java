@@ -15,4 +15,5 @@ public class TraceTest {
     public static void trace(@Return AnyType sum) {
 
     }
+    
 }

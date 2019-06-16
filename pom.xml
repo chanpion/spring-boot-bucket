@@ -69,6 +69,40 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <configuration>
+                        <!--把class打包jar作为附件-->
+                        <attachClasses>true</attachClasses>
+                        <!--打包的时候不使用WEB-INF/classes,这样会把项目的java文件打包成jar放到WEB-INF/lib内-->
+                        <archiveClasses>true</archiveClasses>
+                        <!--设置jar包名字，如果A中没有定义该名字，那么名字为classes-->
+                        <classesClassifier>api</classesClassifier>
+                        <!--
+                        相同点：
+                            packagingExcludes与webResources 均可以排除某些文件。
+                        不同点：
+                            packagingExcludes针对拷贝到target后的资源进行处理。
+                            webResources针对编译前的资源进行处理。
+                        -->
+                        <packagingExcludes>WEB-INF/classes/**/**</packagingExcludes>
+                        <webResources>
+                            <resource>
+                                <directory>target/${project.artifactId}/WEB-INF/classes</directory>
+                                <excludes>
+                                    <exclude>**/**</exclude>
+                                </excludes>
+                            </resource>
+                        </webResources>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
     </build>
 
     <repositories>
