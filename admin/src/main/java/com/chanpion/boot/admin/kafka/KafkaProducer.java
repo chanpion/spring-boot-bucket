@@ -9,7 +9,7 @@ import javax.annotation.Resource;
  * @author April Chen
  * @date 2019/3/27 13:57
  */
-@Service
+//@Service
 public class KafkaProducer {
 
     private static final String TOPIC = "test";

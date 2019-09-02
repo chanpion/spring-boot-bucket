@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
  * @author April Chen
  * @date 2019/3/27 13:59
  */
-@Service
+//@Service
 public class KafkaConsumer {
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumer.class);
 

@@ -26,20 +26,28 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/cloud-admin
-  kafka:
-    bootstrap-servers: 127.0.0.1:9092
-    producer:
-      retries: 0
-      batch-size: 16384
-      buffer-memory: 33554462
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
-    consumer:
-      group-id: test
-      enable-auto-commit: true
-      auto-commit-interval: 100ms
-      key-deserializer: org.apache.kafka.common.serialization.ShortDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.ShortDeserializer
+#  kafka:
+#    bootstrap-servers: 127.0.0.1:9092
+#    producer:
+#      retries: 0
+#      batch-size: 16384
+#      buffer-memory: 33554462
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#    consumer:
+#      group-id: test
+#      enable-auto-commit: true
+#      auto-commit-interval: 100ms
+#      key-deserializer: org.apache.kafka.common.serialization.ShortDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.ShortDeserializer
+#  mail:
+#    host: smtp.163.com
+#    username: forchpeng@163.com
+#    password: xxx
+#    default-encoding: UTF-8
+
+
+
 logging:
   level:
     root: info
