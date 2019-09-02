@@ -14,8 +14,6 @@
         <module>netty</module>
         <module>redis-proxy-monitor</module>
         <module>mybatis</module>
-        <module>recommend</module>
-        <module>redis</module>
     </modules>
 
     <properties>
