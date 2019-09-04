@@ -17,6 +17,7 @@
         <module>recommend</module>
         <module>redis</module>
         <module>samples</module>
+        <module>mybatis-h2</module>
     </modules>
 
     <properties>
