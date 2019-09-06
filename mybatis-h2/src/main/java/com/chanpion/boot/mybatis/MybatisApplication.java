@@ -24,6 +24,7 @@ public class MybatisApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println(userMapper.selectById(100L));
         userMapper.selectList(null).forEach(System.out::println);
     }
 }
