@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8090
 
 spring:
   application:
@@ -23,9 +23,9 @@ spring:
       number_format: #.##
   resources:
     static-locations: ["classpath:/META-INF/resources/","classpath:/resources/","classpath:/static/","classpath:/public/","classpath:/templates/"]
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/cloud-admin
+#  data:
+#    mongodb:
+#      uri: mongodb://localhost:27017/cloud-admin
 #  kafka:
 #    bootstrap-servers: 127.0.0.1:9092
 #    producer:
@@ -62,13 +62,13 @@ management:
   endpoint:
     health:
       show-details: always
-  metrics:
-    export:
-      influx:
-        enabled: true
-        db: spring
-        uri: http://localhost:8086
-        step: 10s
-        user-name: admin
-        password: admin
+#  metrics:
+#    export:
+#      influx:
+#        enabled: true
+#        db: spring
+#        uri: http://localhost:8086
+#        step: 10s
+#        user-name: admin
+#        password: admin
 

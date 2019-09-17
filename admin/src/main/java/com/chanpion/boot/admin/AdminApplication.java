@@ -17,22 +17,22 @@ import java.util.List;
  * @date 2019/1/12 10:30
  */
 @SpringBootApplication
-public class AdminApplication implements CommandLineRunner {
+public class AdminApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(AdminApplication.class, args);
     }
 
-    @Resource
-    private MongoTemplate mongoTemplate;
-
-    @Resource
-    private UserDao userDao;
-
-    @Override
-    public void run(String... args) throws Exception {
-
-        List<User> users = mongoTemplate.findAll(User.class);
-        System.out.println(users);
-    }
+//    @Resource
+//    private MongoTemplate mongoTemplate;
+//
+//    @Resource
+//    private UserDao userDao;
+//
+//    @Override
+//    public void run(String... args) throws Exception {
+//
+//        List<User> users = mongoTemplate.findAll(User.class);
+//        System.out.println(users);
+//    }
 }
