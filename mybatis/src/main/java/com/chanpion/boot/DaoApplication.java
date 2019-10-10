@@ -5,6 +5,7 @@ import com.chanpion.boot.entity.User;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.annotation.Resource;
 
@@ -13,6 +14,7 @@ import javax.annotation.Resource;
  * @date 2019/2/27 17:29
  */
 @SpringBootApplication
+@EnableTransactionManagement
 public class DaoApplication implements CommandLineRunner {
     @Resource
     private UserDao userDao;

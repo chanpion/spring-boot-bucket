@@ -20,9 +20,9 @@ public class IndexBuilder {
     private ElasticsearchTemplate elasticsearchTemplate;
 
     public void build() {
-//        elasticsearchTemplate.deleteIndex("user");
-        elasticsearchTemplate.createIndex("user");
-        elasticsearchTemplate.createIndex(User.class);
+        if (!elasticsearchTemplate.indexExists("user")) {
+            elasticsearchTemplate.createIndex("user");
+        }
 
         User u1 = new User("chen", 20);
         User u2 = new User("li", 30);

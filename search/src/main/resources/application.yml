@@ -5,9 +5,6 @@ spring:
     elasticsearch:
       cluster-name: elasticsearch
       cluster-nodes: 127.0.0.1:9300
-#  elasticsearch:
-#    jest:
-#      uris: ["127.0.0.1:9200"]
-#      properties:
-#        logs: ./elasticsearch/log #elasticsearch日志存储目录
-#        data: ./elasticsearch/data #elasticsearch数据存储目录
+  elasticsearch:
+    rest:
+      uris: ["http://127.0.0.1:9200"]

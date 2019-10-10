@@ -13,12 +13,15 @@
         <!--<module>redis-proxy</module>-->
         <!--<module>netty</module>-->
         <!--<module>redis-proxy-monitor</module>-->
-        <!--<module>mybatis</module>-->
+        <module>mybatis</module>
         <!--<module>recommend</module>-->
         <!--<module>redis</module>-->
         <!--<module>samples</module>-->
-        <!--<module>mybatis-h2</module>-->
+        <module>mybatis-h2</module>
         <module>search</module>
+        <module>common</module>
+        <module>transaction</module>
+        <module>neo4j</module>
     </modules>
 
     <properties>
