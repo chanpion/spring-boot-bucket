@@ -10,7 +10,7 @@
     <version>1.0.0</version>
     <modules>
         <!--<module>admin</module>-->
-        <!--<module>redis-proxy</module>-->
+        <module>redis-proxy</module>
         <!--<module>netty</module>-->
         <!--<module>redis-proxy-monitor</module>-->
         <module>mybatis</module>

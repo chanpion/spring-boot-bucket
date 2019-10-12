@@ -1,5 +1,6 @@
-package com.chanpion.redis;
+package com.chanpion.redis.codec;
 
+import com.chanpion.redis.RedisMessage;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageEncoder;
 
