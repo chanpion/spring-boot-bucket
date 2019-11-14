@@ -7,6 +7,8 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.logging.LoggingHandler;
+import io.netty.util.concurrent.Future;
+import io.netty.util.concurrent.GenericFutureListener;
 
 
 /**
@@ -33,8 +35,10 @@ public class RedisClient {
                     }
                 });
         ChannelFuture channelFuture = redisBootstrap.connect("localhost", 6379);
-//        channelFuture.awaitUninterruptibly();
+        channelFuture.awaitUninterruptibly(1000);
+        System.out.println(channelFuture.isSuccess());
         Channel channel = channelFuture.channel();
-        channel.writeAndFlush("*3\\r\\n$5\\r\\nsetnx\\r\\n$1\\r\\na\\r\\n$1\\r\\nb\\r\\n");
+        ChannelFuture future = channel.writeAndFlush("*3\\r\\n$5\\r\\nsetnx\\r\\n$1\\r\\na\\r\\n$1\\r\\nb\\r\\n");
+        future.addListener(future1 -> System.out.println("write finished"));
     }
 }

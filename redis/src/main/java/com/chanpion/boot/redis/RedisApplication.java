@@ -26,7 +26,6 @@ public class RedisApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
         for (int i = 0; i < 10; i++) {
             new Thread(new Demo(i)).start();
         }

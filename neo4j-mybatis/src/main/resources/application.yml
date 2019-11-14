@@ -1,0 +1,4 @@
+server:
+  port: 7476
+mybatis:
+  mapper-locations: classpath:

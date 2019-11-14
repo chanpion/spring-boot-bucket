@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.chanpion.boot.neo4j.Neo4jDAO">
+
+    <select id="count" resultType="int">
+        MATCH (n:${label}) RETURN COUNT(*)
+    </select>
+
+    <insert id="create">
+        CREATE (n:${label} {<foreach collection="properties.entrySet()" separator="," index="key" item="value">${key}:#{value}</foreach>})
+    </insert>
+
+    <delete id="deleteById">
+        MATCH (n) WHERE id(n)=#{id} DELETE n
+    </delete>
+
+    <select id="findByLabel" resultType="com.alibaba.fastjson.JSONObject">
+        MATCH (n:${label}) RETURN n skip ${startRow} LIMIT ${pageSize}
+    </select>
+</mapper>

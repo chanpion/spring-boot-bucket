@@ -49,7 +49,7 @@ public enum RedisMessageType {
         if (value == null) {
             return;
         }
-        out.writeByte(value.byteValue());
+        out.writeByte(value);
     }
 
     public static RedisMessageType valueOf(byte value) {
