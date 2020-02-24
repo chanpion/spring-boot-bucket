@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS rbac_user;
+create TABLE rbac_user(
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '用户id',
+  username VARCHAR(50) NOT NULL COMMENT '用户名',
+  email VARCHAR(100) DEFAULT NULL COMMENT '邮箱',
+  mobile CHAR(11) DEFAULT  NULL COMMENT '手机号',
+  create_time TIMESTAMP COMMENT '创建时间',
+  update_time TIMESTAMP COMMENT '更新时间',
+  UNIQUE KEY idx_un(username)
+)ENGINE = InnoDB DEFAULT CHARSET =utf8;
+
+DROP TABLE IF EXISTS rbac_role;
+CREATE TABLE rbac_role(
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '角色id',
+  name VARCHAR(50) NOT NULL COMMENT '角色名称',
+  create_time TIMESTAMP COMMENT '创建时间',
+  update_time TIMESTAMP COMMENT '更新时间'
+)ENGINE = InnoDB DEFAULT CHARSET =utf8;
+
+
+DROP TABLE IF EXISTS rbac_permission;
+CREATE TABLE rbac_permission(
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '权限id',
+  name VARCHAR(50) NOT NULL COMMENT '权限名称',
+  create_time TIMESTAMP COMMENT '创建时间',
+  update_time TIMESTAMP COMMENT '更新时间'
+)ENGINE = InnoDB DEFAULT CHARSET =utf8;
