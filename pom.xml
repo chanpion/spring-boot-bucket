@@ -16,13 +16,14 @@
         <module>mybatis</module>
         <!--<module>recommend</module>-->
         <!--<module>redis</module>-->
-        <!--<module>samples</module>-->
+        <module>samples</module>
         <module>mybatis-h2</module>
         <module>search</module>
         <module>common</module>
         <module>transaction</module>
         <module>neo4j</module>
         <module>neo4j-mybatis</module>
+        <module>rbac</module>
     </modules>
 
     <properties>
