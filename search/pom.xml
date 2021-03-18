@@ -13,7 +13,7 @@
     <version>1.0.0</version>
 
     <properties>
-        <elasticsearch.version>6.8.3</elasticsearch.version>
+        <elasticsearch.version>7.11.2</elasticsearch.version>
         <elasticsearch>6.8.3</elasticsearch>
     </properties>
 
