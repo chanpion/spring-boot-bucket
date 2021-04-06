@@ -22,6 +22,10 @@ public class SearchApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        indexBuilder.build();
+        try {
+            indexBuilder.build();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

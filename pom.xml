@@ -10,20 +10,23 @@
     <version>1.0.0</version>
     <modules>
         <!--<module>admin</module>-->
-        <module>redis-proxy</module>
+<!--        <module>redis-proxy</module>-->
         <!--<module>netty</module>-->
         <!--<module>redis-proxy-monitor</module>-->
-        <module>mybatis</module>
+<!--        <module>mybatis</module>-->
         <!--<module>recommend</module>-->
         <!--<module>redis</module>-->
-        <module>samples</module>
-        <module>mybatis-h2</module>
-        <module>search</module>
-        <module>common</module>
-        <module>transaction</module>
-        <module>neo4j</module>
-        <module>neo4j-mybatis</module>
-        <module>rbac</module>
+<!--        <module>samples</module>-->
+<!--        <module>mybatis-h2</module>-->
+<!--        <module>search</module>-->
+<!--        <module>common</module>-->
+<!--        <module>transaction</module>-->
+<!--        <module>neo4j</module>-->
+<!--        <module>neo4j-mybatis</module>-->
+<!--        <module>rbac</module>-->
+<!--        <module>neo4j-4</module>-->
+<!--        <module>crawler</module>-->
+        <module>aspectj</module>
     </modules>
 
     <properties>
